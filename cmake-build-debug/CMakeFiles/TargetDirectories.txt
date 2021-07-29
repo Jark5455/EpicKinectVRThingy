@@ -1,0 +1,4 @@
+/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingyTest.dir
+/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir
