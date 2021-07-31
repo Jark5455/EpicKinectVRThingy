@@ -14,10 +14,22 @@ using namespace std;
 int main(int argc, char** argv)
 {
     std::thread userTracker(startUserTracking);
+    std::thread nunchukListener(startNunchukListener);
 
     while (!wasKeyboardHit()) {
-        if (head->getPositionConfidence() > .5)
-            printf("%s. (%5.2f, %5.2f, %5.2f)\n", "Head", head->getPosition().x, head->getPosition().y, head->getPosition().z);
+
+        if (userdata->getSkeleton().getJoint(nite::JOINT_RIGHT_HAND).getPositionConfidence() > .5)
+            printf("%s. (%5.2f, %5.2f, %5.2f)\n", "right_hand", userdata->getSkeleton().getJoint(nite::JOINT_RIGHT_HAND).getPosition().x, userdata->getSkeleton().getJoint(nite::JOINT_RIGHT_HAND).getPosition().y, userdata->getSkeleton().getJoint(nite::JOINT_RIGHT_HAND).getPosition().z);
+
+        if (userdata->getSkeleton().getJoint(nite::JOINT_RIGHT_ELBOW).getPositionConfidence() > .5)
+            printf("%s. (%5.2f, %5.2f, %5.2f)\n", "right_elbow", userdata->getSkeleton().getJoint(nite::JOINT_RIGHT_ELBOW).getPosition().x, userdata->getSkeleton().getJoint(nite::JOINT_RIGHT_ELBOW).getPosition().y, userdata->getSkeleton().getJoint(nite::JOINT_RIGHT_ELBOW).getPosition().z);
+
+        if (userdata->getSkeleton().getJoint(nite::JOINT_LEFT_HAND).getPositionConfidence() > .5)
+            printf("%s. (%5.2f, %5.2f, %5.2f)\n", "left_hand", userdata->getSkeleton().getJoint(nite::JOINT_LEFT_HAND).getPosition().x, userdata->getSkeleton().getJoint(nite::JOINT_LEFT_HAND).getPosition().y, userdata->getSkeleton().getJoint(nite::JOINT_LEFT_HAND).getPosition().z);
+
+        if (userdata->getSkeleton().getJoint(nite::JOINT_LEFT_ELBOW).getPositionConfidence() > .5)
+            printf("%s. (%5.2f, %5.2f, %5.2f)\n", "left_elbow", userdata->getSkeleton().getJoint(nite::JOINT_LEFT_ELBOW).getPosition().x, userdata->getSkeleton().getJoint(nite::JOINT_LEFT_ELBOW).getPosition().y, userdata->getSkeleton().getJoint(nite::JOINT_LEFT_ELBOW).getPosition().z);
+
         usleep(33333);
     }
 

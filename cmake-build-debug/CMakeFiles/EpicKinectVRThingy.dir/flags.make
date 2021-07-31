@@ -4,7 +4,7 @@
 # compile CXX with clang++
 CXX_DEFINES = -DEpicKinectVRThingy_EXPORTS
 
-CXX_INCLUDES = -I/usr/local/include/libNiTE2 -I/usr/local/include/libOpenNI2 -I/home/yashr/CLionProjects/EpicKinectVRThingy
+CXX_INCLUDES = -I/usr/local/include/libNiTE2 -I/usr/local/include/libOpenNI2 -I/usr/local/include/libOpenVR -I/usr/include/python3.9 -I/home/yashr/CLionProjects/EpicKinectVRThingy
 
-CXX_FLAGS = -g -fPIC -std=gnu++11
+CXX_FLAGS = -Wall -Wextra -g -fPIC -std=gnu++11
 

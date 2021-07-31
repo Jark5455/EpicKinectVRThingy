@@ -27,6 +27,9 @@
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Command-line flag to silence nested $(MAKE).
 $(VERBOSE)MAKESILENT = -s
 
@@ -79,17 +82,47 @@ CMakeFiles/EpicKinectVRThingy.dir/library.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EpicKinectVRThingy.dir/library.cpp.s"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yashr/CLionProjects/EpicKinectVRThingy/library.cpp -o CMakeFiles/EpicKinectVRThingy.dir/library.cpp.s
 
+CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o: CMakeFiles/EpicKinectVRThingy.dir/flags.make
+CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o: ../ControllerDrivers/LeftControllerDriver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o -c /home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/LeftControllerDriver.cpp
+
+CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/LeftControllerDriver.cpp > CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.i
+
+CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/LeftControllerDriver.cpp -o CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.s
+
+CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o: CMakeFiles/EpicKinectVRThingy.dir/flags.make
+CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o: ../ControllerDrivers/RightControllerDriver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o -c /home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/RightControllerDriver.cpp
+
+CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/RightControllerDriver.cpp > CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.i
+
+CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/RightControllerDriver.cpp -o CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.s
+
 # Object files for target EpicKinectVRThingy
 EpicKinectVRThingy_OBJECTS = \
-"CMakeFiles/EpicKinectVRThingy.dir/library.cpp.o"
+"CMakeFiles/EpicKinectVRThingy.dir/library.cpp.o" \
+"CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o" \
+"CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o"
 
 # External object files for target EpicKinectVRThingy
 EpicKinectVRThingy_EXTERNAL_OBJECTS =
 
 libEpicKinectVRThingy.so: CMakeFiles/EpicKinectVRThingy.dir/library.cpp.o
+libEpicKinectVRThingy.so: CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o
+libEpicKinectVRThingy.so: CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o
 libEpicKinectVRThingy.so: CMakeFiles/EpicKinectVRThingy.dir/build.make
 libEpicKinectVRThingy.so: CMakeFiles/EpicKinectVRThingy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libEpicKinectVRThingy.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libEpicKinectVRThingy.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EpicKinectVRThingy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

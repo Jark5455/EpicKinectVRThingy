@@ -1,16 +1,23 @@
 #include "library.h"
 
-#include <python3.9/Python.h>
+#include <Python.h>
 #include <cstdlib>
 
 using namespace nite;
 
-#define MAX_USERS 10
+#define MAX_USERS 1
 bool g_visibleUsers[MAX_USERS] = {false};
 nite::SkeletonState g_skeletonStates[MAX_USERS] = {nite::SKELETON_NONE};
 
 #define USER_MESSAGE(msg) \
 {printf("[%08llu] User #%d:\t%s\n",ts, user.getId(),msg);}
+
+const nite::UserData *userdata = new UserData();
+
+long joystick_x = 130;
+long joystick_y = 130;
+bool joystick_c = false;
+bool joystick_z = false;
 
 void updateUserState(const nite::UserData& user, unsigned long long ts)
 {
@@ -49,7 +56,7 @@ void updateUserState(const nite::UserData& user, unsigned long long ts)
     }
 }
 
-void startUserTracking() {
+[[noreturn]] void startUserTracking() {
     UserTracker userTracker;
     Status niteRc;
 
@@ -71,35 +78,21 @@ void startUserTracking() {
             continue;
         }
 
-        const nite::Array<UserData>& users = userTrackerFrame.getUsers();
+        if (userTrackerFrame.getUsers().getSize() > 0){
+            userdata = userTrackerFrame.getUserById(1);
 
-        if (users.getSize() > 0){
-
-            if (users.getSize() > 1){
-                printf("More than 1 user detected. Tracking user 0\n");
+            if (userdata->isNew()){
+                userTracker.startSkeletonTracking(1);
             }
 
-            for (int i = 0; i < users.getSize(); ++i){
-                const UserData user = users[0];
-
-                updateUserState(user, userTrackerFrame.getTimestamp());
-
-                if (user.isNew()){
-                    userTracker.startSkeletonTracking(user.getId());
-                } else if (user.getSkeleton().getState() == SKELETON_TRACKED){
-                    head = &user.getSkeleton().getJoint(JOINT_HEAD);
-                    right_hand = &user.getSkeleton().getJoint(JOINT_RIGHT_HAND);
-                    right_elbow = &user.getSkeleton().getJoint(JOINT_RIGHT_ELBOW);
-                    left_hand = &user.getSkeleton().getJoint(JOINT_LEFT_HAND);
-                    left_elbow = &user.getSkeleton().getJoint(JOINT_LEFT_ELBOW);
-                }
-            }
         }
     }
 }
 
-void startNunchukListener(){
+[[noreturn]] void startNunchukListener(){
     setenv("BLINKA_MCP2221", "1", 1);
+
+    Py_Initialize();
 
     PyObject *board = PyImport_Import(PyUnicode_FromString("board"));
     PyObject *adafruit_nunchuk = PyImport_Import(PyUnicode_FromString("adafruit_nunchuk"));
@@ -113,6 +106,10 @@ void startNunchukListener(){
         joystick_x = PyLong_AsLong(PyTuple_GetItem(joystick, PyLong_AsSsize_t(PyLong_FromLong((long)0))));
         joystick_y = PyLong_AsLong(PyTuple_GetItem(joystick, PyLong_AsSsize_t(PyLong_FromLong((long)1))));
 
+        PyObject *buttons = PyObject_GetAttr(nc, PyUnicode_FromString("buttons"));
+
+        joystick_c = PyObject_IsTrue(PyObject_GetAttr(buttons, PyUnicode_FromString("C")));
+        joystick_z = PyObject_IsTrue(PyObject_GetAttr(buttons, PyUnicode_FromString("Z")));
     }
 
 }

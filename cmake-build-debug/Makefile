@@ -31,6 +31,9 @@ default_target: all
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Command-line flag to silence nested $(MAKE).
 $(VERBOSE)MAKESILENT = -s
 
@@ -142,6 +145,54 @@ EpicKinectVRThingy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/build
 .PHONY : EpicKinectVRThingy/fast
 
+ControllerDrivers/LeftControllerDriver.o: ControllerDrivers/LeftControllerDriver.cpp.o
+.PHONY : ControllerDrivers/LeftControllerDriver.o
+
+# target to build an object file
+ControllerDrivers/LeftControllerDriver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o
+.PHONY : ControllerDrivers/LeftControllerDriver.cpp.o
+
+ControllerDrivers/LeftControllerDriver.i: ControllerDrivers/LeftControllerDriver.cpp.i
+.PHONY : ControllerDrivers/LeftControllerDriver.i
+
+# target to preprocess a source file
+ControllerDrivers/LeftControllerDriver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.i
+.PHONY : ControllerDrivers/LeftControllerDriver.cpp.i
+
+ControllerDrivers/LeftControllerDriver.s: ControllerDrivers/LeftControllerDriver.cpp.s
+.PHONY : ControllerDrivers/LeftControllerDriver.s
+
+# target to generate assembly for a file
+ControllerDrivers/LeftControllerDriver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.s
+.PHONY : ControllerDrivers/LeftControllerDriver.cpp.s
+
+ControllerDrivers/RightControllerDriver.o: ControllerDrivers/RightControllerDriver.cpp.o
+.PHONY : ControllerDrivers/RightControllerDriver.o
+
+# target to build an object file
+ControllerDrivers/RightControllerDriver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o
+.PHONY : ControllerDrivers/RightControllerDriver.cpp.o
+
+ControllerDrivers/RightControllerDriver.i: ControllerDrivers/RightControllerDriver.cpp.i
+.PHONY : ControllerDrivers/RightControllerDriver.i
+
+# target to preprocess a source file
+ControllerDrivers/RightControllerDriver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.i
+.PHONY : ControllerDrivers/RightControllerDriver.cpp.i
+
+ControllerDrivers/RightControllerDriver.s: ControllerDrivers/RightControllerDriver.cpp.s
+.PHONY : ControllerDrivers/RightControllerDriver.s
+
+# target to generate assembly for a file
+ControllerDrivers/RightControllerDriver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.s
+.PHONY : ControllerDrivers/RightControllerDriver.cpp.s
+
 library.o: library.cpp.o
 .PHONY : library.o
 
@@ -200,6 +251,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... EpicKinectVRThingy"
 	@echo "... EpicKinectVRThingyTest"
+	@echo "... ControllerDrivers/LeftControllerDriver.o"
+	@echo "... ControllerDrivers/LeftControllerDriver.i"
+	@echo "... ControllerDrivers/LeftControllerDriver.s"
+	@echo "... ControllerDrivers/RightControllerDriver.o"
+	@echo "... ControllerDrivers/RightControllerDriver.i"
+	@echo "... ControllerDrivers/RightControllerDriver.s"
 	@echo "... library.o"
 	@echo "... library.i"
 	@echo "... library.s"

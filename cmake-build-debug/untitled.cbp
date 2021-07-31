@@ -36,6 +36,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include/libNiTE2"/>
 					<Add directory="/usr/local/include/libOpenNI2"/>
+					<Add directory="/usr/local/include/libOpenVR"/>
+					<Add directory="/usr/include/python3.9"/>
 					<Add directory="/home/yashr/CLionProjects/EpicKinectVRThingy"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
@@ -61,6 +63,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include/libNiTE2"/>
 					<Add directory="/usr/local/include/libOpenNI2"/>
+					<Add directory="/usr/local/include/libOpenVR"/>
+					<Add directory="/usr/include/python3.9"/>
 					<Add directory="/home/yashr/CLionProjects/EpicKinectVRThingy"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
@@ -96,6 +100,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include/libNiTE2"/>
 					<Add directory="/usr/local/include/libOpenNI2"/>
+					<Add directory="/usr/local/include/libOpenVR"/>
+					<Add directory="/usr/include/python3.9"/>
 					<Add directory="/home/yashr/CLionProjects/EpicKinectVRThingy"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
@@ -121,6 +127,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include/libNiTE2"/>
 					<Add directory="/usr/local/include/libOpenNI2"/>
+					<Add directory="/usr/local/include/libOpenVR"/>
+					<Add directory="/usr/include/python3.9"/>
 					<Add directory="/home/yashr/CLionProjects/EpicKinectVRThingy"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
@@ -138,6 +146,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/LeftControllerDriver.cpp">
+			<Option target="EpicKinectVRThingy"/>
+		</Unit>
+		<Unit filename="/home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/LeftControllerDriver.h">
+			<Option target="EpicKinectVRThingy"/>
+		</Unit>
+		<Unit filename="/home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/RightControllerDriver.cpp">
+			<Option target="EpicKinectVRThingy"/>
+		</Unit>
+		<Unit filename="/home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/RightControllerDriver.h">
+			<Option target="EpicKinectVRThingy"/>
+		</Unit>
 		<Unit filename="/home/yashr/CLionProjects/EpicKinectVRThingy/library.cpp">
 			<Option target="EpicKinectVRThingy"/>
 		</Unit>

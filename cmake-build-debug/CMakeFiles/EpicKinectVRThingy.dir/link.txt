@@ -1,1 +1,1 @@
-clang++ -fPIC -g -shared -Wl,-soname,libEpicKinectVRThingy.so -o libEpicKinectVRThingy.so CMakeFiles/EpicKinectVRThingy.dir/library.cpp.o  -lNiTE2 -lOpenNI2 
+clang++ -fPIC -Wall -Wextra -g -shared -Wl,-soname,libEpicKinectVRThingy.so -o libEpicKinectVRThingy.so CMakeFiles/EpicKinectVRThingy.dir/library.cpp.o CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o  -lNiTE2 -lOpenNI2 -lpython3.9 -lopenvr_api64 

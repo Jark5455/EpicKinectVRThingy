@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/LeftControllerDriver.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o"
+  "/home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/RightControllerDriver.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o"
   "/home/yashr/CLionProjects/EpicKinectVRThingy/library.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/library.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -21,6 +23,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include/libNiTE2"
   "/usr/local/include/libOpenNI2"
+  "/usr/local/include/libOpenVR"
+  "/usr/include/python3.9"
   "../"
   )
 

@@ -1,1 +1,1 @@
-clang++ -g CMakeFiles/EpicKinectVRThingyTest.dir/test/EpicKinectVRThingyTest.cpp.o -o EpicKinectVRThingyTest  -Wl,-rpath,/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug libEpicKinectVRThingy.so -lNiTE2 -lOpenNI2 -lpthread 
+clang++ -Wall -Wextra -g CMakeFiles/EpicKinectVRThingyTest.dir/test/EpicKinectVRThingyTest.cpp.o -o EpicKinectVRThingyTest  -Wl,-rpath,/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug libEpicKinectVRThingy.so -lNiTE2 -lOpenNI2 -lpthread -lpython3.9 
