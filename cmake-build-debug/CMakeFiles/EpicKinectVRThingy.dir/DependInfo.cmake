@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/LeftControllerDriver.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o"
   "/home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/RightControllerDriver.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o"
+  "/home/yashr/CLionProjects/EpicKinectVRThingy/DeviceFactory.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/DeviceFactory.cpp.o"
+  "/home/yashr/CLionProjects/EpicKinectVRThingy/DeviceProvider.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/DeviceProvider.cpp.o"
   "/home/yashr/CLionProjects/EpicKinectVRThingy/library.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/library.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

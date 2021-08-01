@@ -7,9 +7,6 @@
 
 EVRInitError RightControllerDriver::Activate(uint32_t unObjectId) {
 
-    std::thread userTracker(startUserTracking);
-    std::thread nunchukListener(startNunchukListener);
-
     driverId = unObjectId;
 
     PropertyContainerHandle_t  props = VRProperties()->TrackedDeviceToPropertyContainer(driverId);

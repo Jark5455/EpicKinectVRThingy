@@ -9,7 +9,7 @@ set(CMAKE_CXX_FLAGS_DEBUG -g)
 set(CMAKE_CXX_FLAGS_RELEASE -O3)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-add_library(EpicKinectVRThingy SHARED library.cpp ControllerDrivers/LeftControllerDriver.cpp ControllerDrivers/RightControllerDriver.cpp)
+add_library(EpicKinectVRThingy SHARED library.cpp ControllerDrivers/LeftControllerDriver.cpp ControllerDrivers/RightControllerDriver.cpp DeviceFactory.cpp DeviceProvider.cpp)
 add_executable(EpicKinectVRThingyTest test/EpicKinectVRThingyTest.cpp)
 
 link_directories(/usr/local/lib)

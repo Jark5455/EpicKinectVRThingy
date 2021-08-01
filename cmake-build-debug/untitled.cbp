@@ -158,6 +158,15 @@
 		<Unit filename="/home/yashr/CLionProjects/EpicKinectVRThingy/ControllerDrivers/RightControllerDriver.h">
 			<Option target="EpicKinectVRThingy"/>
 		</Unit>
+		<Unit filename="/home/yashr/CLionProjects/EpicKinectVRThingy/DeviceFactory.cpp">
+			<Option target="EpicKinectVRThingy"/>
+		</Unit>
+		<Unit filename="/home/yashr/CLionProjects/EpicKinectVRThingy/DeviceProvider.cpp">
+			<Option target="EpicKinectVRThingy"/>
+		</Unit>
+		<Unit filename="/home/yashr/CLionProjects/EpicKinectVRThingy/DeviceProvider.h">
+			<Option target="EpicKinectVRThingy"/>
+		</Unit>
 		<Unit filename="/home/yashr/CLionProjects/EpicKinectVRThingy/library.cpp">
 			<Option target="EpicKinectVRThingy"/>
 		</Unit>

@@ -193,6 +193,54 @@ ControllerDrivers/RightControllerDriver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.s
 .PHONY : ControllerDrivers/RightControllerDriver.cpp.s
 
+DeviceFactory.o: DeviceFactory.cpp.o
+.PHONY : DeviceFactory.o
+
+# target to build an object file
+DeviceFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceFactory.cpp.o
+.PHONY : DeviceFactory.cpp.o
+
+DeviceFactory.i: DeviceFactory.cpp.i
+.PHONY : DeviceFactory.i
+
+# target to preprocess a source file
+DeviceFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceFactory.cpp.i
+.PHONY : DeviceFactory.cpp.i
+
+DeviceFactory.s: DeviceFactory.cpp.s
+.PHONY : DeviceFactory.s
+
+# target to generate assembly for a file
+DeviceFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceFactory.cpp.s
+.PHONY : DeviceFactory.cpp.s
+
+DeviceProvider.o: DeviceProvider.cpp.o
+.PHONY : DeviceProvider.o
+
+# target to build an object file
+DeviceProvider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceProvider.cpp.o
+.PHONY : DeviceProvider.cpp.o
+
+DeviceProvider.i: DeviceProvider.cpp.i
+.PHONY : DeviceProvider.i
+
+# target to preprocess a source file
+DeviceProvider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceProvider.cpp.i
+.PHONY : DeviceProvider.cpp.i
+
+DeviceProvider.s: DeviceProvider.cpp.s
+.PHONY : DeviceProvider.s
+
+# target to generate assembly for a file
+DeviceProvider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceProvider.cpp.s
+.PHONY : DeviceProvider.cpp.s
+
 library.o: library.cpp.o
 .PHONY : library.o
 
@@ -257,6 +305,12 @@ help:
 	@echo "... ControllerDrivers/RightControllerDriver.o"
 	@echo "... ControllerDrivers/RightControllerDriver.i"
 	@echo "... ControllerDrivers/RightControllerDriver.s"
+	@echo "... DeviceFactory.o"
+	@echo "... DeviceFactory.i"
+	@echo "... DeviceFactory.s"
+	@echo "... DeviceProvider.o"
+	@echo "... DeviceProvider.i"
+	@echo "... DeviceProvider.s"
 	@echo "... library.o"
 	@echo "... library.i"
 	@echo "... library.s"
