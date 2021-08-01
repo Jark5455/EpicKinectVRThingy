@@ -13,7 +13,6 @@ extern bool joystick_c;
 extern bool joystick_z;
 
 [[noreturn]] void startUserTracking();
-void updateUserState(const nite::UserData& user, unsigned long long ts);
 [[noreturn]] void startNunchukListener();
 
 #endif //UNTITLED_LIBRARY_H

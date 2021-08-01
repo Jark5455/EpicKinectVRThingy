@@ -26,7 +26,7 @@ int wasKeyboardHit()
 #include <fcntl.h>
 int wasKeyboardHit()
 {
-	struct termios oldt, newt;
+	struct termios oldt, newt{};
 	int ch;
 	int oldf;
 

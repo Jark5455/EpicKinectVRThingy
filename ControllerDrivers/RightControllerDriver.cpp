@@ -5,8 +5,6 @@
 
 #include "RightControllerDriver.h"
 
-using namespace vr;
-
 EVRInitError RightControllerDriver::Activate(uint32_t unObjectId) {
 
     std::thread userTracker(startUserTracking);
@@ -16,7 +14,7 @@ EVRInitError RightControllerDriver::Activate(uint32_t unObjectId) {
 
     PropertyContainerHandle_t  props = VRProperties()->TrackedDeviceToPropertyContainer(driverId);
 
-    VRProperties()->SetStringProperty(props, Prop_InputProfilePath_String, "EpicKinectVRThingy/input/controller_profile.json");
+    VRProperties()->SetStringProperty(props, Prop_InputProfilePath_String, "EpicKinectVRThingy/input/left_controller_profile.json");
     VRProperties()->SetInt32Property(props, Prop_ControllerRoleHint_Int32, ETrackedControllerRole::TrackedControllerRole_RightHand);
 
     VRDriverInput()->CreateScalarComponent(props, "/input/joystick/y", &joystickYHandle, EVRScalarType::VRScalarType_Absolute, EVRScalarUnits::VRScalarUnits_NormalizedOneSided);

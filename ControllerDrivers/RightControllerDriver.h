@@ -4,23 +4,23 @@
 
 #pragma once
 
+#ifndef UNTITLED_RIGHTCONTROLLERDRIVER_H
+#define UNTITLED_RIGHTCONTROLLERDRIVER_H
+
 #include <openvr_driver.h>
 #include <cstdint>
 #include <library.h>
-
-#ifndef UNTITLED_RIGHTCONTROLLERDRIVER_H
-#define UNTITLED_RIGHTCONTROLLERDRIVER_H
 
 using namespace vr;
 
 class RightControllerDriver : public ITrackedDeviceServerDriver {
 public:
-    EVRInitError Activate(uint32_t unObjectId);
-    void Deactivate();
-    void EnterStandby();
-    void* GetComponent(const char* pchComponentNameAndVersion);
-    void DebugRequest(const char* pchRequest, char* pchResponseBuffer, uint32_t unResponseBufferSize);
-    DriverPose_t GetPose();
+    EVRInitError Activate(uint32_t unObjectId) override;
+    void Deactivate() override;
+    void EnterStandby() override;
+    void* GetComponent(const char* pchComponentNameAndVersion) override;
+    void DebugRequest(const char* pchRequest, char* pchResponseBuffer, uint32_t unResponseBufferSize) override;
+    DriverPose_t GetPose() override;
     void RunFrame();
 private:
     uint32_t driverId;
