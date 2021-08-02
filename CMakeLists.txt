@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(untitled)
+project(EpicKinectVRThingy)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_COMPILER clang++)
@@ -9,7 +9,7 @@ set(CMAKE_CXX_FLAGS_DEBUG -g)
 set(CMAKE_CXX_FLAGS_RELEASE -O3)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-add_library(EpicKinectVRThingy SHARED library.cpp ControllerDrivers/LeftControllerDriver.cpp ControllerDrivers/RightControllerDriver.cpp DeviceFactory.cpp DeviceProvider.cpp)
+add_library(EpicKinectVRThingy SHARED library.cpp Driver/IVRDevice.h Driver/DeviceType.h Driver/IVRDriver.h)
 add_executable(EpicKinectVRThingyTest test/EpicKinectVRThingyTest.cpp)
 
 link_directories(/usr/local/lib)
@@ -35,3 +35,8 @@ target_link_libraries(EpicKinectVRThingyTest PRIVATE python3.9)
 
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/NiTE2/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/NiTE2)
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/OpenNI2/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/OpenNI2)
+
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/left_controller_profile.json/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/left_controller_profile.json)
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/right_controller_profile.json/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/right_controller_profile.json)
+
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/driver.vrdrivermanifest DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/driver.vrdrivermanifest)

@@ -3,7 +3,7 @@
 //
 
 #include <thread>
-#include <DeviceProvider.h>
+#include "old/ControllerDrivers/native/DeviceProvider.h"
 
 EVRInitError DeviceProvider::Init(IVRDriverContext *pDriverContext) {
     EVRInitError initError = InitServerDriverContext(pDriverContext);
@@ -34,6 +34,8 @@ void DeviceProvider::Cleanup() {
     delete rightControllerDriver;
     leftControllerDriver = nullptr;
     rightControllerDriver = nullptr;
+
+    niteShutdown();
 }
 
 const char* const* DeviceProvider::GetInterfaceVersions() {

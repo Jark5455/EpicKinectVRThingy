@@ -145,102 +145,6 @@ EpicKinectVRThingy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/build
 .PHONY : EpicKinectVRThingy/fast
 
-ControllerDrivers/LeftControllerDriver.o: ControllerDrivers/LeftControllerDriver.cpp.o
-.PHONY : ControllerDrivers/LeftControllerDriver.o
-
-# target to build an object file
-ControllerDrivers/LeftControllerDriver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o
-.PHONY : ControllerDrivers/LeftControllerDriver.cpp.o
-
-ControllerDrivers/LeftControllerDriver.i: ControllerDrivers/LeftControllerDriver.cpp.i
-.PHONY : ControllerDrivers/LeftControllerDriver.i
-
-# target to preprocess a source file
-ControllerDrivers/LeftControllerDriver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.i
-.PHONY : ControllerDrivers/LeftControllerDriver.cpp.i
-
-ControllerDrivers/LeftControllerDriver.s: ControllerDrivers/LeftControllerDriver.cpp.s
-.PHONY : ControllerDrivers/LeftControllerDriver.s
-
-# target to generate assembly for a file
-ControllerDrivers/LeftControllerDriver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.s
-.PHONY : ControllerDrivers/LeftControllerDriver.cpp.s
-
-ControllerDrivers/RightControllerDriver.o: ControllerDrivers/RightControllerDriver.cpp.o
-.PHONY : ControllerDrivers/RightControllerDriver.o
-
-# target to build an object file
-ControllerDrivers/RightControllerDriver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o
-.PHONY : ControllerDrivers/RightControllerDriver.cpp.o
-
-ControllerDrivers/RightControllerDriver.i: ControllerDrivers/RightControllerDriver.cpp.i
-.PHONY : ControllerDrivers/RightControllerDriver.i
-
-# target to preprocess a source file
-ControllerDrivers/RightControllerDriver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.i
-.PHONY : ControllerDrivers/RightControllerDriver.cpp.i
-
-ControllerDrivers/RightControllerDriver.s: ControllerDrivers/RightControllerDriver.cpp.s
-.PHONY : ControllerDrivers/RightControllerDriver.s
-
-# target to generate assembly for a file
-ControllerDrivers/RightControllerDriver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.s
-.PHONY : ControllerDrivers/RightControllerDriver.cpp.s
-
-DeviceFactory.o: DeviceFactory.cpp.o
-.PHONY : DeviceFactory.o
-
-# target to build an object file
-DeviceFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceFactory.cpp.o
-.PHONY : DeviceFactory.cpp.o
-
-DeviceFactory.i: DeviceFactory.cpp.i
-.PHONY : DeviceFactory.i
-
-# target to preprocess a source file
-DeviceFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceFactory.cpp.i
-.PHONY : DeviceFactory.cpp.i
-
-DeviceFactory.s: DeviceFactory.cpp.s
-.PHONY : DeviceFactory.s
-
-# target to generate assembly for a file
-DeviceFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceFactory.cpp.s
-.PHONY : DeviceFactory.cpp.s
-
-DeviceProvider.o: DeviceProvider.cpp.o
-.PHONY : DeviceProvider.o
-
-# target to build an object file
-DeviceProvider.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceProvider.cpp.o
-.PHONY : DeviceProvider.cpp.o
-
-DeviceProvider.i: DeviceProvider.cpp.i
-.PHONY : DeviceProvider.i
-
-# target to preprocess a source file
-DeviceProvider.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceProvider.cpp.i
-.PHONY : DeviceProvider.cpp.i
-
-DeviceProvider.s: DeviceProvider.cpp.s
-.PHONY : DeviceProvider.s
-
-# target to generate assembly for a file
-DeviceProvider.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/DeviceProvider.cpp.s
-.PHONY : DeviceProvider.cpp.s
-
 library.o: library.cpp.o
 .PHONY : library.o
 
@@ -299,18 +203,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... EpicKinectVRThingy"
 	@echo "... EpicKinectVRThingyTest"
-	@echo "... ControllerDrivers/LeftControllerDriver.o"
-	@echo "... ControllerDrivers/LeftControllerDriver.i"
-	@echo "... ControllerDrivers/LeftControllerDriver.s"
-	@echo "... ControllerDrivers/RightControllerDriver.o"
-	@echo "... ControllerDrivers/RightControllerDriver.i"
-	@echo "... ControllerDrivers/RightControllerDriver.s"
-	@echo "... DeviceFactory.o"
-	@echo "... DeviceFactory.i"
-	@echo "... DeviceFactory.s"
-	@echo "... DeviceProvider.o"
-	@echo "... DeviceProvider.i"
-	@echo "... DeviceProvider.s"
 	@echo "... library.o"
 	@echo "... library.i"
 	@echo "... library.s"

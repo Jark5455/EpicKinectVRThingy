@@ -1,8 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/LeftControllerDriver.cpp.o"
-  "CMakeFiles/EpicKinectVRThingy.dir/ControllerDrivers/RightControllerDriver.cpp.o"
-  "CMakeFiles/EpicKinectVRThingy.dir/DeviceFactory.cpp.o"
-  "CMakeFiles/EpicKinectVRThingy.dir/DeviceProvider.cpp.o"
   "CMakeFiles/EpicKinectVRThingy.dir/library.cpp.o"
   "libEpicKinectVRThingy.pdb"
   "libEpicKinectVRThingy.so"

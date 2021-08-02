@@ -17,8 +17,8 @@ EVRInitError RightControllerDriver::Activate(uint32_t unObjectId) {
     VRDriverInput()->CreateScalarComponent(props, "/input/joystick/y", &joystickYHandle, EVRScalarType::VRScalarType_Absolute, EVRScalarUnits::VRScalarUnits_NormalizedOneSided);
     VRDriverInput()->CreateScalarComponent(props, "/input/joystick/x", &joystickXHandle, EVRScalarType::VRScalarType_Absolute, EVRScalarUnits::VRScalarUnits_NormalizedOneSided);
 
-    VRDriverInput()->CreateBooleanComponent(props, "/input/buttons/c", &buttonCHandle);
-    VRDriverInput()->CreateBooleanComponent(props, "/input/buttons/z", &buttonZHandle);
+    VRDriverInput()->CreateBooleanComponent(props, "/input/button_c", &buttonCHandle);
+    VRDriverInput()->CreateBooleanComponent(props, "/input/button_z", &buttonZHandle);
 
     return VRInitError_None;
 }
@@ -49,6 +49,7 @@ void RightControllerDriver::RunFrame() {
     VRDriverInput()->UpdateBooleanComponent(buttonCHandle, joystick_c, 0);
     VRDriverInput()->UpdateBooleanComponent(buttonCHandle, joystick_z, 0);
 
+    /*
     DriverPose_t pose = {};
 
     if (userdata->isNew() || userdata->isLost() || !userdata->isVisible()){
@@ -83,12 +84,12 @@ void RightControllerDriver::RunFrame() {
     pose.qWorldFromDriverRotation = quat;
     pose.qDriverFromHeadRotation = quat;
 
-    VRServerDriverHost()->TrackedDevicePoseUpdated(driverId, pose, sizeof(pose));
+    VRServerDriverHost()->TrackedDevicePoseUpdated(driverId, pose, sizeof pose);
+    */
 }
 
 void RightControllerDriver::Deactivate() {
     driverId = k_unTrackedDeviceIndexInvalid;
-    niteShutdown();
 }
 
 void* RightControllerDriver::GetComponent(const char *pchComponentNameAndVersion) {

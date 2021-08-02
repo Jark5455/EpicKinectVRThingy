@@ -15,6 +15,9 @@ using namespace vr;
 
 class LeftControllerDriver : public ITrackedDeviceServerDriver {
 public:
+
+    virtual ~LeftControllerDriver() = default;
+
     EVRInitError Activate(uint32_t unObjectId) override;
     void Deactivate() override;
     void EnterStandby() override;

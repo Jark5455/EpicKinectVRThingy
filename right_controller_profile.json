@@ -1,0 +1,29 @@
+{
+  "jsonid": "right_input_profile",
+  "controller_type": "EpicKinectVRThingy_controller",
+  "legacy_binding" : "EpicKinectVRThingy/input/legacy_bindings_example.json",
+  "device_class" : "TrackedDeviceClass_Controller",
+  "input_bindingui_mode": "single_device",
+  "input_bindingui_right": {
+    "image": "EpicKinectVRThingy/icons/game_controller.svg"
+  },
+  "should_show_binding_errors": true,
+  "input_source": {
+    "/input/joystick": {
+      "type": "joystick",
+      "click": false,
+      "touch": false,
+      "binding_image_point": [0,0]
+    },
+
+    "/input/button_c": {
+      "type": "button",
+      "click": false
+    },
+
+    "/input/button_z": {
+      "type": "button",
+      "click": false
+    }
+  }
+}

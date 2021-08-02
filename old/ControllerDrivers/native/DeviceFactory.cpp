@@ -2,7 +2,7 @@
 // Created by yashr on 8/1/21.
 //
 
-#include <DeviceProvider.h>
+#include <old/ControllerDrivers/native/DeviceProvider.h>
 #include <openvr_driver.h>
 
 #define HMD_DLL_EXPORT extern "C" __attribute__((visibility("default")))
