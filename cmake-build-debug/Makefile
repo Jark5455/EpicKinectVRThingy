@@ -51,10 +51,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2021.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/yashr/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.4746.93/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2021.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/yashr/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.4746.93/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2021.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/yashr/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.4746.93/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -81,7 +81,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2021.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/yashr/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.4746.93/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -145,6 +145,78 @@ EpicKinectVRThingy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/build
 .PHONY : EpicKinectVRThingy/fast
 
+Driver/ControllerDevice.o: Driver/ControllerDevice.cpp.o
+.PHONY : Driver/ControllerDevice.o
+
+# target to build an object file
+Driver/ControllerDevice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/Driver/ControllerDevice.cpp.o
+.PHONY : Driver/ControllerDevice.cpp.o
+
+Driver/ControllerDevice.i: Driver/ControllerDevice.cpp.i
+.PHONY : Driver/ControllerDevice.i
+
+# target to preprocess a source file
+Driver/ControllerDevice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/Driver/ControllerDevice.cpp.i
+.PHONY : Driver/ControllerDevice.cpp.i
+
+Driver/ControllerDevice.s: Driver/ControllerDevice.cpp.s
+.PHONY : Driver/ControllerDevice.s
+
+# target to generate assembly for a file
+Driver/ControllerDevice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/Driver/ControllerDevice.cpp.s
+.PHONY : Driver/ControllerDevice.cpp.s
+
+Driver/VRDriver.o: Driver/VRDriver.cpp.o
+.PHONY : Driver/VRDriver.o
+
+# target to build an object file
+Driver/VRDriver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/Driver/VRDriver.cpp.o
+.PHONY : Driver/VRDriver.cpp.o
+
+Driver/VRDriver.i: Driver/VRDriver.cpp.i
+.PHONY : Driver/VRDriver.i
+
+# target to preprocess a source file
+Driver/VRDriver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/Driver/VRDriver.cpp.i
+.PHONY : Driver/VRDriver.cpp.i
+
+Driver/VRDriver.s: Driver/VRDriver.cpp.s
+.PHONY : Driver/VRDriver.s
+
+# target to generate assembly for a file
+Driver/VRDriver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/Driver/VRDriver.cpp.s
+.PHONY : Driver/VRDriver.cpp.s
+
+Native/DriverFactory.o: Native/DriverFactory.cpp.o
+.PHONY : Native/DriverFactory.o
+
+# target to build an object file
+Native/DriverFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/Native/DriverFactory.cpp.o
+.PHONY : Native/DriverFactory.cpp.o
+
+Native/DriverFactory.i: Native/DriverFactory.cpp.i
+.PHONY : Native/DriverFactory.i
+
+# target to preprocess a source file
+Native/DriverFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/Native/DriverFactory.cpp.i
+.PHONY : Native/DriverFactory.cpp.i
+
+Native/DriverFactory.s: Native/DriverFactory.cpp.s
+.PHONY : Native/DriverFactory.s
+
+# target to generate assembly for a file
+Native/DriverFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/Native/DriverFactory.cpp.s
+.PHONY : Native/DriverFactory.cpp.s
+
 library.o: library.cpp.o
 .PHONY : library.o
 
@@ -203,6 +275,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... EpicKinectVRThingy"
 	@echo "... EpicKinectVRThingyTest"
+	@echo "... Driver/ControllerDevice.o"
+	@echo "... Driver/ControllerDevice.i"
+	@echo "... Driver/ControllerDevice.s"
+	@echo "... Driver/VRDriver.o"
+	@echo "... Driver/VRDriver.i"
+	@echo "... Driver/VRDriver.s"
+	@echo "... Native/DriverFactory.o"
+	@echo "... Native/DriverFactory.i"
+	@echo "... Native/DriverFactory.s"
 	@echo "... library.o"
 	@echo "... library.i"
 	@echo "... library.s"

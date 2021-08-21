@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/yashr/CLionProjects/EpicKinectVRThingy/Driver/ControllerDevice.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/Driver/ControllerDevice.cpp.o"
+  "/home/yashr/CLionProjects/EpicKinectVRThingy/Driver/VRDriver.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/Driver/VRDriver.cpp.o"
+  "/home/yashr/CLionProjects/EpicKinectVRThingy/Native/DriverFactory.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/Native/DriverFactory.cpp.o"
   "/home/yashr/CLionProjects/EpicKinectVRThingy/library.cpp" "/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles/EpicKinectVRThingy.dir/library.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

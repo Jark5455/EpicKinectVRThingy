@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2021.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/yashr/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.4746.93/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2021.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/yashr/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.4746.93/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -86,12 +86,12 @@ clean: CMakeFiles/EpicKinectVRThingy.dir/clean
 CMakeFiles/EpicKinectVRThingyTest.dir/all: CMakeFiles/EpicKinectVRThingy.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingyTest.dir/build.make CMakeFiles/EpicKinectVRThingyTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingyTest.dir/build.make CMakeFiles/EpicKinectVRThingyTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target EpicKinectVRThingyTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target EpicKinectVRThingyTest"
 .PHONY : CMakeFiles/EpicKinectVRThingyTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EpicKinectVRThingyTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/EpicKinectVRThingyTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/EpicKinectVRThingyTest.dir/rule
@@ -112,12 +112,12 @@ CMakeFiles/EpicKinectVRThingyTest.dir/clean:
 CMakeFiles/EpicKinectVRThingy.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EpicKinectVRThingy.dir/build.make CMakeFiles/EpicKinectVRThingy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target EpicKinectVRThingy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target EpicKinectVRThingy"
 .PHONY : CMakeFiles/EpicKinectVRThingy.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EpicKinectVRThingy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/EpicKinectVRThingy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yashr/CLionProjects/EpicKinectVRThingy/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/EpicKinectVRThingy.dir/rule

@@ -24,7 +24,7 @@ namespace EpicKinectVRThingy {
             out_pose.result = tracking ? vr::ETrackingResult::TrackingResult_Running_OK : vr::ETrackingResult::TrackingResult_Running_OutOfRange;
             out_pose.willDriftInYaw = false;
             out_pose.shouldApplyHeadModel = false;
-            out_pose.qDriverFromHeadRotation = out_pose.qWorldFromDriverRotation.w = out_pose.qRotation.w = 1.0;
+            out_pose.qDriverFromHeadRotation.w = out_pose.qWorldFromDriverRotation.w = out_pose.qRotation.w = 1.0;
 
             return out_pose;
         }

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(EpicKinectVRThingy)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_COMPILER clang++)
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra")
@@ -9,7 +9,7 @@ set(CMAKE_CXX_FLAGS_DEBUG -g)
 set(CMAKE_CXX_FLAGS_RELEASE -O3)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-add_library(EpicKinectVRThingy SHARED library.cpp Driver/IVRDevice.h Driver/DeviceType.h Driver/IVRDriver.h)
+add_library(EpicKinectVRThingy SHARED library.cpp Driver/VRDriver.cpp Driver/VRDriver.h Driver/IVRDriver.h Driver/IVRDevice.h Native/DriverFactory.h Native/DriverFactory.cpp Driver/ControllerDevice.h Driver/ControllerDevice.cpp)
 add_executable(EpicKinectVRThingyTest test/EpicKinectVRThingyTest.cpp)
 
 link_directories(/usr/local/lib)

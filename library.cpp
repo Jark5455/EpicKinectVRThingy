@@ -6,6 +6,7 @@
 using namespace nite;
 
 const nite::UserData *userdata;
+nite::UserTracker *userTracker = static_cast<UserTracker *>(malloc(sizeof(nite::UserTracker)));
 
 long joystick_x = 130;
 long joystick_y = 130;
@@ -14,12 +15,12 @@ bool joystick_z = false;
 
 
 [[noreturn]] void startUserTracking() {
-    UserTracker userTracker;
     Status niteRc;
 
     NiTE::initialize();
 
-    niteRc = userTracker.create();
+    niteRc = userTracker->create();
+
     if (niteRc != STATUS_OK){
         printf("Couldn't create user tracker\n");
         exit(3);
@@ -29,7 +30,7 @@ bool joystick_z = false;
 
     UserTrackerFrameRef userTrackerFrame;
     while (true){
-        niteRc = userTracker.readFrame(&userTrackerFrame);
+        niteRc = userTracker->readFrame(&userTrackerFrame);
         if (niteRc != STATUS_OK){
             printf("Failed to get next frame\n");
             continue;
@@ -39,9 +40,8 @@ bool joystick_z = false;
             userdata = userTrackerFrame.getUserById(1);
 
             if (userdata->isNew()){
-                userTracker.startSkeletonTracking(1);
+                userTracker->startSkeletonTracking(1);
             }
-
         }
     }
 }
